@@ -1,4 +1,17 @@
+import { ThemeProvider } from "./components/ThemeProvider";
+
 const PrivateLayout = ({ children }: { children: React.ReactNode }) => {
-  return <main>{children}</main>;
+  return (
+    <main>
+      <ThemeProvider
+        attribute="class"
+        defaultTheme="light"
+        // enableSystem
+        disableTransitionOnChange
+      >
+        {children}
+      </ThemeProvider>
+    </main>
+  );
 };
 export default PrivateLayout;
