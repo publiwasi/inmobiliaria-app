@@ -3,6 +3,7 @@ export default function Home() {
     <div>
       👋
       <p>register listo</p>
+      <p>login listo</p>
     </div>
   );
 }
